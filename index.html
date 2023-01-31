@@ -3,8 +3,8 @@
 <head>
     <title>Jerome Lim - Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/timeline.css" />
@@ -26,12 +26,12 @@
 <body data-spy="scroll" data-target="#list-navigation" class="position-relative">
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="bg-light border-end" id="sidebar-wrapper">
             <div class="sidebar-heading text-center p-3 d-none d-md-block">
                 <h1 class="font-weight-normal text-center" style="font-size: 2.3rem;">Jerome Lim</h1>
                 <h6 class="font-weight-normal text-muted text-center">Front-End Developer</h6>
             </div>
-            <div class="p-3 d-block d-md-none text-right">
+            <div class="p-3 d-block d-md-none text-end">
                 <button class="menu-toggle btn btn-link btn-lg">
                     <i class="fas fa-arrow-left"></i>
                 </button>
@@ -39,19 +39,19 @@
             <div id="list-navigation" class="list-group list-group-flush">
                 <a href="#" data-target="#about"
                     class="scroll-to-div list-group-item list-group-item-action bg-light"><i
-                        class="fas fa-chart-line pr-2"></i>About</a>
-                <a href="#" data-target="#projects"
+                        class="fas fa-chart-line pe-2"></i>About</a>
+                <!-- <a href="#" data-target="#projects"
                     class="scroll-to-div list-group-item list-group-item-action bg-light"><i
-                        class="fas fa-hammer pr-2"></i>Projects</a>
+                        class="fas fa-hammer pe-2"></i>Projects</a> -->
                 <a href="#" data-target="#skills"
                     class="scroll-to-div list-group-item list-group-item-action bg-light"><i
-                        class="fas fa-chart-bar pr-2"></i>Skills</a>
+                        class="fas fa-chart-bar pe-2"></i>Skills</a>
                 <a href="#" data-target="#education"
                     class="scroll-to-div list-group-item list-group-item-action bg-light"><i
-                        class="fas fa-graduation-cap pr-2"></i>Education</a>
+                        class="fas fa-graduation-cap pe-2"></i>Education</a>
                 <a href="#" data-target="#contact"
                     class="scroll-to-div list-group-item list-group-item-action bg-light"><i
-                        class="fas fa-phone pr-2"></i>Contact</a>
+                        class="fas fa-phone pe-2"></i>Contact</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -84,7 +84,7 @@
                         </ul>
                     </div>
                 </section>
-                <section id="projects" class="projects scrollspy">
+                <!-- <section id="projects" class="projects scrollspy">
                     <h3 class="section-title">Projects</h3>
                     <div class="container pb-5">
                         <div class="row">
@@ -103,7 +103,7 @@
                                     <div id="project-myfbaleads" class="project-details">
                                         <div class="p-3">
                                             <label class="h6">Technologies</label>
-                                            <button type="button" class="close project-details-close float-right"
+                                            <button type="button" style="border: 0;" class="close project-details-close float-end"
                                                 aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
@@ -119,7 +119,7 @@
                                             <ul>
                                                 <li>&nbsp;</li>
                                             </ul>
-                                            <button type="button"
+                                            <button style="border: 0;" type="button"
                                                 class="project-bottom-close close project-details-close"
                                                 aria-label="Close">
                                                 <i class="fas fa-arrow-left"></i>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                </section>
+                </section> -->
                 <section id="skills" class="skills scrollspy position-relative">
                     <h3 class="section-title">Skills</h3>
                     <div class="container pb-5">
@@ -161,6 +161,14 @@
                                     <h6 class="p-3 font-weight-normal">ReactJS</h6>
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill" src="images/redux.png" />
+                                    <h6 class="p-3 font-weight-normal">Redux</h6>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill" src="images/ts.png" />
+                                    <h6 class="p-3 font-weight-normal">Typescript</h6>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
                                     <img class="img img-skill" src="images/antd.png" />
                                     <h6 class="p-3 font-weight-normal">Ant Design</h6>
                                 </div>
@@ -169,8 +177,30 @@
                                     <h6 class="p-3 font-weight-normal">Material-UI</h6>
                                 </div>
                                 <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
-                                    <img class="img img-skill" src="images/wordpress.png" />
-                                    <h6 class="p-3 font-weight-normal">WordPress</h6>
+                                    <img class="img img-skill rounded-lg" src="images/chakra.png" />
+                                    <h6 class="p-3 font-weight-normal">Chakra UI</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-container p-3 mb-5">
+                            <div class="my-container-header pb-2">Backend</div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill my-4" src="images/php.png" />
+                                    <h6 class="p-3 font-weight-normal">PHP</h6>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill" src="images/dotnetcore.png" />
+                                    <h6 class="p-3 font-weight-normal">.Net Core</h6>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill" src="images/node.png" />
+                                    <h6 class="p-3 font-weight-normal">node.js</h6>
+                                </div>
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill" src="images/firebase.png" />
+                                    <h6 class="p-3 font-weight-normal">Firebase</h6>
                                 </div>
                             </div>
                         </div>
@@ -193,6 +223,16 @@
                                 <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
                                     <img class="img img-skill" src="images/mongodb.png" />
                                     <h6 class="p-3 font-weight-normal">MongoDB</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-container p-3 mb-5">
+                            <div class="my-container-header pb-2">Blockchain</div>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-4 col-6 text-center mb-3">
+                                    <img class="img img-skill" src="images/sol1.png" />
+                                    <h6 class="p-3 font-weight-normal">Solidity</h6>
                                 </div>
                             </div>
                         </div>
@@ -233,6 +273,14 @@
                                     <h6 class="p-3 font-weight-normal">Adobe Premiere Pro</h6>
                                 </div>
                             </div>
+                            <ul>
+                                <li>Web API</li>
+                                <li>MVC</li>
+                                <li>MVVM</li>
+                                <li>Progressive Web Apps</li>
+                                <li>Single Page Apps</li>
+                                <li>Github</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -240,29 +288,44 @@
                     <h3 class="section-title">Education</h3>
                     <div class="container pb-5">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <div class="card">
-                                    <h5 class="card-header">Informatics Alabang</h5>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="card shadow-sm">
+                                    <h5 class="card-header">Bachelor's</h5>
                                     <div class="card-body">
-                                        <p class="card-text">Information and Communications Technology - Programming</p>
+                                        <p class="card-text">Pamantasan ng Lungsod ng Muntinlupa</p>
+                                        <small class="card-text fw-lighter">Bachelor of Science in Computer
+                                            Science</small>
+                                    </div>
+                                    <div class="card-footer">2021 - Present</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="card shadow-sm">
+                                    <h5 class="card-header">Senior High School</h5>
+                                    <div class="card-body">
+                                        <p class="card-text">Informatics Alabang</p>
+                                        <small class="card-text fw-lighter">Information and
+                                            Communications Technology - Programming</small>
                                     </div>
                                     <div class="card-footer">2018 - 2020</div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <div class="card">
-                                    <h5 class="card-header">Muntinlupa National High School</h5>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="card shadow-sm">
+                                    <h5 class="card-header">Junior High School</h5>
                                     <div class="card-body">
-                                        <p class="card-text">Secondary Education</p>
+                                        <p class="card-text">Muntinlupa National High School - Main</p>
                                     </div>
                                     <div class="card-footer">2014 - 2018</div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <div class="card">
-                                    <h5 class="card-header">Putatan Elementary School</h5>
+                            <div class="col-md-6 col-sm-12 mb-3">
+                                <div class="card shadow-sm">
+                                    <h5 class="card-header">Elementary Education</h5>
                                     <div class="card-body">
-                                        <p class="card-text">Primary Education</p>
+                                        <p class="card-text">Putatan Elementary School</p>
                                     </div>
                                     <div class="card-footer">2008 - 2014</div>
                                 </div>
